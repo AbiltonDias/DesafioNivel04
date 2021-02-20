@@ -8,7 +8,6 @@ import IUpdateProductsQuantityDTO from '@modules/products/dtos/IUpdateProductsQu
 import Product from '@modules/products/infra/typeorm/entities/Product';
 import Order from '../infra/typeorm/entities/Order';
 import IOrdersRepository from '../repositories/IOrdersRepository';
-import ordersRouter from '../infra/http/routes/orders.routes';
 
 interface IProduct {
   id: string;

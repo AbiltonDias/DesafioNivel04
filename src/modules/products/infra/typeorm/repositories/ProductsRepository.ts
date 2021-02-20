@@ -47,7 +47,7 @@ class ProductsRepository implements IProductsRepository {
       return product.id;
     });
 
-    const findProducts = await this.ormRepository({
+    const findProducts = await this.ormRepository.find({
       where: {
         id: In(produtsId),
       },
